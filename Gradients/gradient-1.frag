@@ -7,11 +7,9 @@ uniform vec2 u mouse;
 uniform float u_time;
 
 void main() {
-        10
-        vec2
-        st = gl_FragCoord. xy/abs(u_mouse * 0.7);
+        vec2 st = gl_FragCoord. xy/abs(u_mouse * 0.7);
         gl_FragColor = vec4 (abs(sin(st.x)),                            // red
                             st.y,                                       // green
-                            abs(exp(sin(-st.x)) / exp(cos(st.y))),    // blue
+                            abs(exp(sin(-st.x)) / exp(cos(st.y))),      // blue
                             1.0);                                       // alpha
 ｝
